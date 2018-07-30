@@ -10,7 +10,7 @@ Box_black {
 }
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10;
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -34,7 +34,6 @@ li a:hover {
 Box_white {           
   width:220px;
   background-color: white;
-  
   border:5px;
   margin:10px; 
     padding-top: 150px
@@ -42,7 +41,6 @@ Box_white {
 }
 
 body {
-    background-image: url("../images/bg_wallpaper_1.jpg");
     background-repeat: repeat-x;
 }
 img {
@@ -59,6 +57,11 @@ html {
     -moz-transform: scale(0.85);
     -webkit-transform: scale(0.85);
     transform: scale(0.85);
+    background: url(../images/bg_wallpaper_1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -86,3 +89,36 @@ footer {
     text-align: center;
     color: white;
 }
+.textright {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    color: white;
+    text-align:right;
+    text-indent: 30px;
+    letter-spacing: 3px;
+    line-height: 1;
+    word-spacing: 5px;
+    text-shadow: 3px 2px black;    
+}
+.textleft {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    color: white;
+    text-align:left;
+    text-indent: 30px;
+    letter-spacing: 3px;
+    line-height: 1;
+    word-spacing: 5px;
+    text-shadow: 3px 2px black;    
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+

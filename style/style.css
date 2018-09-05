@@ -1,5 +1,47 @@
+//For our background stuffs
+
+
+Box_black {           
+  width:220px;
+  background-color: black;
+  padding:0px;
+  border:0px;
+  margin:0px; 
+}
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+Box_white {           
+  width:220px;
+  background-color: white;
+  border:5px;
+  margin:10px; 
+    padding-top: 150px
+  float: right;
+}
+
 body {
-    background-image: url("../images/bg_wallpaper_1.jpg");
+    background-repeat: repeat-x;
 }
 img {
         filter: opacity = 0.5;
@@ -7,30 +49,20 @@ img {
 p {
     background-color: aliceblue;
 }
-.flex-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: transparent;
-            border-color: black; 
-}           
-.flex-container > div {
-        background-color: #ffffff;
-    justify-content: flex-end;
-            text-decoration: underline;
-            text-decoration-color: white;
-        width: 200px;
-        line-height: 50px;
-            margin: 3px;
-            text-align: center;
-            font-size: 20px;
-            padding-right: 12px;
-}
-           
 * {
     box-sizing: border-box;
 }
-
+html {
+    zoom: 0.85;
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+    background: url(../images/bg_wallpaper_1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,3 +89,36 @@ footer {
     text-align: center;
     color: white;
 }
+.textright {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    color: white;
+    text-align:right;
+    text-indent: 30px;
+    letter-spacing: 3px;
+    line-height: 1;
+    word-spacing: 5px;
+    text-shadow: 3px 2px black;    
+}
+.textleft {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    color: white;
+    text-align:left;
+    text-indent: 30px;
+    letter-spacing: 3px;
+    line-height: 1;
+    word-spacing: 5px;
+    text-shadow: 3px 2px black;    
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+

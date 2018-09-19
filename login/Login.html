@@ -128,15 +128,46 @@ input[type="submit"]:active {
   padding: 26px;
   box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
 }
+      .topnav {
+    background-color: #333;
+    overflow: hidden;
 }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body background="tempp.jpeg">
-
-
+<div class="topnav">
+         <a href="../index/About%20us.htm">About</a>
+          <a href="../index/Contact%20us.htm">Contact</a>
+          <a href="#signup.html">Register</a>
+         <a href="Login.html">Login</a>
+         <a class="active" href="../index/index.html">Home</a>
+    </div> 
 <div class="login">
     <div style="text-align: center" class="b"><f><p><b>Login</b></p></f></div>
     <input type="text" placeholder="Username" id="username">  

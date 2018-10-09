@@ -1,0 +1,173 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+    font-family: 'Margarine', cursive;
+}
+
+hr {
+    border: 2px solid #18ba60;
+    width: 500px;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    clear: both;
+    overflow: auto;
+}
+
+.head h4 {
+    padding-top: 0;
+    color: #18ba60;
+    margin-top: 0;
+}
+.name{
+    font-size: 4em;
+    color:#18ba60;
+    font-weight: 900;
+    margin: 0;
+    margin-top: 1em;
+}
+
+
+.navigation ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+
+.navigation li{
+    display: inline-block;
+    margin: 1em;
+    
+}
+
+.navigation a{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em;
+    color: #ffffff;
+    
+}
+
+.intro{
+    background:linear-gradient(0DEG, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(./imgs/bg_wallpaper_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10em 0;
+    color: #ffffff;
+    
+}
+
+#content-intro {
+    margin-top: 10em;
+    overflow: auto;
+}
+
+#content-intro h1{
+    
+    margin-top: 1.5em;
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+#content-intro span{
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+.button-intro {
+    padding:0.5em 2em;
+    margin-top: 1em;
+    background:#18ba60;
+    color: #ffffff;
+    font-weight: 400;
+    border: 2px solid #18ba60;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    
+}
+
+
+.button-intro:hover{
+    background: #ffffff;
+    border: 2px solid #18ba60;
+    color: #000000;
+}
+
+
+.quotes {
+    padding: 5em 0;
+    overflow: auto;
+}
+
+
+.quotes h4{
+    color: #18ba60;
+    text-align: center;
+    
+
+}
+
+.content-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.col-wide {
+    width: 90%;
+    float: right;
+    text-align: center;
+    margin-top: 2em;
+    overflow: auto;
+    margin-right: 5%;
+        
+    
+}
+
+
+.work {
+    padding: 5em 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4), rgb(24,0,0)), url(./imgs/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.work h1{
+    color:#18ba60;
+}
+
+.follow-share {
+    padding: 3em 0;
+    overflow: auto;
+}
+
+
+.footer {
+    background: #000000;
+    padding: 2em 0;
+    color: #ffffff;
+    overflow: auto;
+}
+
+
+
+
+
+

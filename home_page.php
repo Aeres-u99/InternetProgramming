@@ -25,10 +25,12 @@
         
         
         <section class="intro">
-            <div id="content-intro">
+            <div class="content-intro">
                 <h1>A SOCIAL READER FOR E-BOOKS<span> CHOOSE FROM HUGE COLLECTION OF FREE BOOKS<br></span></h1>
-                <button class="button-intro">EXPLORE NOW</button>
-            </div>
+                <div class="buttonpadding">
+                <a href="./explore_page.php" class="button">EXPLORE NOW</a>
+                </div>
+            </div>    
         </section>
         
         
@@ -56,15 +58,15 @@
             
             
             <div class="para">
-                <p>As students we have always had troubles sharing our ebooks, We always wanted to have something from where we can upload our books and share it. Something where in students could upload their files and share it with others. So here we present you BookLovers.com </p>
+                <p>As students most of the times we have faced difficulty while sharing our books and ebooks, We always wanted to have something from where we can upload our books and share it. Something where in students could upload their files and share it with others. So here we present you BookLovers.com </p>
             </div>
            
             <div class="para">
-                <p>Students can create their accounts and save their books which will stay on our cloud space,Every account will be granted a spae of 4Gb at the start which will be increased to 7gb once limit is reached. As we are trying to keep our website free of ads any and all amount of donations are welcomed. We can work together to provide a huge support to students and teachers by providing them free sharable ebooks.</p>
+                <p>Students can create their accounts and share their books which will stay on our website,Every account will be granted a dedicated space at the start which might be increased once limit is reached. As we are trying to keep our website free of ads any and all amount of donations are welcomed. We can work together to provide a huge support to students and teachers by providing them free sharable  ebooks.</p>
             </div>
             
             <div class="para">
-                <p>This Platform will Offer a wide Variety of Books from various Categories all in one Place. Once Registered you can Log in and manage your Content as per your Choice. You can Follow the Trending Books, Readers and even provide your opinions on books you have read.<br>For Readers, By Readers !! </p>
+                <p>This Platform will Offer a wide Variety of Books from various Categories all in one Place. Once Registered you can Log in and manage your Content as per your Choice. You can Follow the Trending Books, Readers and even provide your opinions on books you have read.<br><b>For Readers, By Readers !!</b> </p>
             </div>
             </div>
         </section>
@@ -72,9 +74,10 @@
   
         <section class="follow-share">
             <div class="content-wrap">
+                <hr>
                 <h1>Follow & Share!</h1>
                 <p>Contribute to the Books you read with your Opinion, Ideas and Stories. Follow Other Readers and see what gems of Inspiration they have to share.</p>
-                <button href="contactus_page.php" class="button-intro"><b>Any Suggestions ?</b></button>
+                <a href="contactus_page.php" class="button">Any Suggestions ?</a>
             </div>           
         </section>
   

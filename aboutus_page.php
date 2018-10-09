@@ -55,7 +55,7 @@ header {
         
    
 .intro{
-    background:linear-gradient(180DEG, rgba(0,0,0,0), rgba(500,0,100,0.3));
+    background:linear-gradient(180DEG, rgba(0,0,0,0), rgb(155,155,0));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -99,7 +99,7 @@ header {
 
 .work {
     padding: 5em 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.4), rgb(24,0,0)), url(./imgs/bookshelf_2.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(24,0,0,0.5)), url(./imgs/bookshelf_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -113,16 +113,24 @@ header {
 }
    
 .button {
-    padding:0.5em 2em;
-    margin-top: 1em;
+    padding:0.2em 2em;
     background:#FF2400;
     color: #ffffff;
     font-weight: 400;
-    border: 2px solid #000000;
+    border: 2px solid #FF2400;
+    text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s linear;
     
 }
+
+
+.button:hover{
+    background: #ffffff;
+    border: 2px solid #FF2400;
+    color: #000000;
+}
+    
 .follow-share {
     padding: 3em 0;
     overflow: auto;
@@ -174,7 +182,7 @@ header {
             </div>
            
             <div class="para">
-                <p>Life is busy. Even so, it’s important to carve out time to relax and time for yourself. That’s where “Book Lovers” comes in. Let us do the work of choosing a good read that will be delivered right to your door each month. Before you know it you’ll be back in the reading habit! By reading just 10 to 20 minutes a day, you can easily finish a book in a month. You deserve a reading break!</p>
+                <p>Life is busy. Even though, it’s important to crave out time to relax oure mind and soul. That’s where “Book Lovers” come's in. Let us do the work of choosing a good read that will be available on any device you log into. Before you know it you’ll be back in the reading habit! By reading just 10 to 20 minutes a day, you can easily finish a book in a month. You deserve a reading break!</p>
             </div>
             
             <div class="para">
@@ -199,7 +207,7 @@ header {
                 <hr>
                 <h1>Follow & Share!</h1>
                 <p>Contribute to the Books you read with your Opinion, Ideas and Stories. Follow Other Readers and see what gems of Inspiration they have to share.</p>
-                <button href="contactus_page.php" class="button"><b>Any Suggestions ?</b></button>
+                <a href="contactus_page.php" class="button">Any Suggestions ?</a>
             </div>           
         </section>
         

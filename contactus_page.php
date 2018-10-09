@@ -101,7 +101,7 @@ header {
 
 .work {
     padding: 8em 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.4), rgb(24,0,0)), url(./imgs/bookshelf.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(20,0,0,0)), url(./imgs/bookshelf.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

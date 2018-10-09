@@ -184,7 +184,7 @@ input[type="password"]:focus, input[type="text"]:focus {
         
 .forgot:hover { 
     color: #000000;
-        }
+}
     
 input[type="submit"] {   
   width:250px;
@@ -212,16 +212,24 @@ input[type="submit"]:active {
 }
    
 .button {
-    padding:0.5em 2em;
-    margin-top: 1em;
+    padding:0.2em 2em;
     background:#37a69b;
     color: #ffffff;
     font-weight: 400;
-    border: 2px solid #000000;
+    border: 2px solid #37a69b;
+    text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s linear;
     
 }
+
+
+.button:hover{
+    background: #ffffff;
+    border: 2px solid #37a69b;
+    color: #000000;
+}
+        
 .follow-share {
     padding: 3em 0;
     overflow: auto;
@@ -272,7 +280,7 @@ input[type="submit"]:active {
                 
                 <input type="password" name="password" placeholder="Password" id="justforfont" required>  
                 
-                <a class="forgot" href="#"><u><b>Forgot Password?</b></u></a>
+                <a class="forgot" href="./contactus_page.php"><u><b>Forgot Password?</b></u></a>
                 
                 <input name="login" type="submit" value="Sign In">
                 </form>
@@ -285,7 +293,7 @@ input[type="submit"]:active {
                 <hr>
                 <h1>Follow & Share!</h1>
                 <p>Contribute to the Books you read with your Opinion, Ideas and Stories. Follow Other Readers and see what gems of Inspiration they have to share.</p>
-                <button href="contactus_page.php" class="button"><b>Any Suggestions ?</b></button>
+                <a href="contactus_page.php" class="button">Any Suggestions ?</a>
             </div>           
         </section>
         

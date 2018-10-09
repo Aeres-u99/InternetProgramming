@@ -191,17 +191,24 @@
     
     
     .button {
-        padding:0.5em 2em;
-        margin-top: 1em;
+        padding:0.2em 2em;
         background:#daa520;
         color: #ffffff;
         font-weight: 400;
-        border: 2px solid #000000;
+        border: 2px solid #daa520;
+        text-decoration: none;
         text-transform: uppercase;
         transition: all 0.2s linear;
     
-}    
-    
+}
+
+
+    .button:hover{
+        background: #ffffff;
+        border: 2px solid #daa520;
+        color: #000000;
+}
+   
     .follow-share {
         padding: 3em 0;
         overflow: auto;
@@ -228,12 +235,12 @@
             <h1 class="name">BookLovers.Com</h1>
             <nav class="navigation">
                 <ul>
-                    <li><a href="./home_page.php">HOME</a></li>
-                    <li><a href="./login_page.php">LOGIN</a></li>
-                    <li><a href="./register_page.php">REGISTER</a></li>
-                    <li><a href="./contactus_page.php">CONTACT US</a></li>
-                    <li><a href="./aboutus_page.php">ABOUT US</a></li>
-                </ul>
+                <li><a href="./home_page.php">HOME</a></li>
+                <li><a href="./login_page.php">LOGIN</a></li>
+                <li><a href="./register_page.php">REGISTER</a></li>
+                <li><a href="./contactus_page.php">CONTACT US</a></li>
+                <li><a href="./aboutus_page.php">ABOUT US</a></li>
+            </ul>
             </nav>
         </header>
         
@@ -310,7 +317,7 @@
                             
 				        if($query_run)
 				        {
-				            echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
+				            echo '<script type="text/javascript">alert("User Registered.. Go to Login Page to Login")</script>';
 				        }
 				        else
 				        {
@@ -340,7 +347,7 @@
                 <hr>
                 <h1>Follow & Share!</h1>
                 <p>Contribute to the Books you read with your Opinion, Ideas and Stories. Follow Other Readers and see what gems of Inspiration they have to share.</p>
-                <button href="contactus_page.php" class="button"><b>Any Suggestions ?</b></button>
+                <a href="contactus_page.php" class="button">Any Suggestions ?</a>
             </div>           
         </section>
         

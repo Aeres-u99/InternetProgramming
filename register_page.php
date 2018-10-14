@@ -247,7 +247,7 @@
         <section class="intro">
             <div class="content-intro">
                 <hr>
-                <h1>Fill in the following form yo Register Now  <span>Its Totally Free And Fast !!</span></h1>
+                <h1>Fill in the following form to Register Now  <span>Its Totally Free And Fast !!</span></h1>
                 <hr>
             </div>
         </section>

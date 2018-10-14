@@ -1,14 +1,56 @@
 <?php
-    session_start();
+	session_start();
+	$con=mysqli_connect ("localhost", "root", "") or die ("unable to connect");
+    mysqli_select_db ($con,'samplelogindb');
 
     if(isset($_POST['logout']))
     {
         session_destroy();
         header('location:login_page.php');
     }
-            
-      
+
+
+    else
+    {
+        if(isset($_POST['submit']))
+			{
+				$username=$_POST['username'];
+                $url=$_POST['url'];
+              
+                
+                $query = "select * from userinfodb WHERE username='$username'";
+                    
+				$query_run = mysqli_query($con,$query);
+
+                   
+				if(mysqli_num_rows($query_run)>0)
+				    {
+				        $query = "INSERT INTO user values('','$username','$url')";
+                            
+                        $query_run = mysqli_query($con,$query);
+                            
+				        if($query_run)
+				        {
+				            echo '<script type="text/javascript">alert("URL Submitted...Thank You")</script>';
+				        }
+				        else
+				        {
+				            echo '<script type="text/javascript">alert("Error While Submitting ")</script>';
+				        }
+				    }
+            }
+        else
+        {
+          
+        }
+    }
+
+    
+    
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -121,6 +163,19 @@ header {
         }
               
       
+.user1 {
+            padding:1em 0.6em;
+            text-align: center;  
+            background: #eceeee;
+            border: 3px solid #581845;
+            border-radius: 60px;
+            height: 300px;
+            margin: 80px auto;
+            width: 350px;
+            color: #000000;
+        }      
+      
+      
  input[type="submit"] {   
   width:250px;
   height:40px;
@@ -165,7 +220,48 @@ input[type="submit"]:active {
     border: 2px solid #581845;
     color: #000000;
 }
+   
+      
+.section{
+    padding: 2em 0;
     
+    
+}      
+    
+      
+.section-intro{
+            padding-top: 6em;
+            padding-bottom: 0;
+            width: 60%;
+            margin: 0 auto;
+            
+        }       
+      
+ input[type="text"] {
+
+  border: 1px solid #a3a3a3;
+  border-radius: 30px;
+  box-shadow: 0 2px #696969;
+  box-sizing: content-box;
+  color: #696969;
+  height: 50px;
+  margin: 35px 0 0 0;
+  padding-left: 2em;
+  transition: box-shadow 0.3s;
+  width: 250px;
+
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}     
+      
+  #justforfont{
+        font-style: italic;
+    }
+          
+      
+      
 .follow-share {
     margin-top: 4em;
     padding: 3em 0;
@@ -224,6 +320,46 @@ input[type="submit"]:active {
         
     </SECTION>    
         
+        
+        <section class="section">    
+            <div class="section-intro">   
+                <hr>
+                <h1>You Can Upload your Book's URL Below</h1>
+                <hr>
+                <form class="user1" action="user_page.php" method="post">
+                    <input type="text" name="username" placeholder="Enter Username Here" id="justforfont" required>
+                    
+                    <input type="text" name="url" placeholder="Enter URL Here" id="justforfont" required>
+                    
+                    <input name="submit" type="submit" value="SUBMIT">
+                </form>
+   
+                <h1>LEADERBOARD :</h1>  
+                <marquee><h2>Books Uploaded Till Now :</h2>  </marquee>
+
+                <?php 
+				$con=mysqli_connect ("localhost", "root", "") or die ("unable to connect");
+                mysqli_select_db ($con,'samplelogindb');
+				
+                $sql = "SELECT user.url, user.username, userinfodb.email, userinfodb.username, userinfodb.firstname FROM user JOIN userinfodb ON user.username=userinfodb.username";
+				$result = $con->query($sql);
+
+					if ($result->num_rows > 0) {
+
+				while($row = $result->fetch_assoc()) {
+				echo "Username :". $row["username"]. "  ||  " . "Link:" . $row["url"]. " ||  ". "Firstname: " .$row["firstname"]. "<br>";
+				}
+				} else {
+				echo "0 results";
+				}
+                
+              
+				?>
+               
+                
+            </div> 
+        
+        </section> 
         
         
         <section class="follow-share">

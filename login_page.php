@@ -170,21 +170,6 @@ input[type="password"]:focus, input[type="text"]:focus {
   box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
   outline: 0;
 }
-
-               
-
-.forgot {
-  color: #7f7f7f;
-  float: right;
-  font-size: 15px;
-  margin-right: 25px;
-  transition: color .4s;
-}
-        
-        
-.forgot:hover { 
-    color: #000000;
-}
     
 input[type="submit"] {   
   width:250px;
@@ -279,8 +264,6 @@ input[type="submit"]:active {
                 <input type="text" name="username" placeholder="Username" id="justforfont" required>  
                 
                 <input type="password" name="password" placeholder="Password" id="justforfont" required>  
-                
-                <a class="forgot" href="./contactus_page.php"><u><b>Forgot Password?</b></u></a>
                 
                 <input name="login" type="submit" value="Sign In">
                 </form>
